@@ -21,11 +21,17 @@
       rel="stylesheet"
     />
 
-    <title>Checkout page</title>
+    <link href="style.css" rel="stylesheet" />
 
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <title>Checkout page</title>
   </head>
   <body>
-    <div class="site-wrapper">
+    <div id="site-wrapper">
       <header>
         <h1>Checkout</h1>
       </header>
@@ -34,35 +40,87 @@
           <div id="contact">
             <h2>Contact information</h2>
             <form>
-              <label for="email">Enter your email...</label><br>
-              <input type="text" id="email" name="email"><br>
-              <label for="phone">Enter your phone...</label><br>
-              <input type="text" id="phone" name="phone">
+              <div class="input-container">
+                <label for="email">E-mail</label>
+                <span class="material-icons">email</span>
+                <input
+                  type="text"
+                  id="email"
+                  name="email"
+                  value="Enter your email..."
+                />
+              </div>
+              <div class="input-container">
+                <label for="phone">Phone</label>
+                <span class="material-icons">email</span>
+                <input
+                  type="text"
+                  id="phone"
+                  name="phone"
+                  value="Enter your phone..."
+                />
+              </div>
             </form>
           </div>
           <div id="address">
             <h2>Shipping address</h2>
             <form>
-              <label for="full-name">Your full name...</label><br>
-              <input type="text" id="full-name" name="full-name"><br>
-              <label for="address">Your address...</label><br>
-              <input type="text" id="address" name="address"><br>
-              <label for="city">Your city...</label><br>
-              <input type="text" id="city" name="city"><br>
-              <label for="country">Your country...</label><br>
-              <input type="text" id="country" name="country"><br>
-              <label for="postal-code">Your postal code...</label><br>
-              <input type="text" id="postal-code" name="postal-code"><br>
-              <input type="checkbox" id="save-information" name="save-information" value="save">
-              <label for="save-information">Save this information for next time</label><br>
-              <input type="submit" value="Continue">
+              <div class="input-container">
+                <label class="label" for="full-name">Full name</label>
+                <input
+                  type="text"
+                  id="full-name"
+                  name="full-name"
+                  value="Your full name..."
+                />
+              </div>
+              <div class="input-container">
+                <label for="address">Address</label>
+                <input
+                  type="text"
+                  id="address"
+                  name="address"
+                  value="Your address..."
+                />
+              </div>
+              <div class="input-container">
+                <label for="city">City</label>
+                <input type="text" id="city" name="city" value="Your city..." />
+              </div>
+              <div class="input-container">
+                <label for="country">Country</label>
+                <input
+                  type="text"
+                  id="country"
+                  name="country"
+                  value="Your country..."
+                />
+              </div>
+              <div class="input-container">
+                <label for="postal-code">Postal code</label>
+                <input
+                  type="text"
+                  id="postal-code"
+                  name="postal-code"
+                  value="Your postal code..."
+                />
+              </div>
+              <input
+                type="checkbox"
+                id="save-information"
+                name="save-information"
+              />
+              <label for="save-information"
+                >Save this information for next time</label
+              >
+              <input type="submit" value="Continue" />
             </form>
           </div>
         </div>
         <div id="basket">
           <ul>
             <li>
-              <img src="images/photo1.png" alt="An image of a backpack">
+              <img src="images/photo1.png" alt="An image of a backpack" />
               <h3>Vintage Backpack</h3>
               <div class="prices">
                 <p class="new-price">$54.99</p>
@@ -75,7 +133,7 @@
               </div>
             </li>
             <li>
-              <img src="images/photo2.png" alt="An image of a pair of shoes">
+              <img src="images/photo2.png" alt="An image of a pair of shoes" />
               <h3>Levi Shoes</h3>
               <div class="prices">
                 <p class="new-price">$74.99</p>
@@ -88,18 +146,19 @@
               </div>
             </li>
           </ul>
-          <hr>
+          <hr />
           <div class="summary">
             <p class="summary-text">Shipping</p>
             <p class="summary-value">$19</p>
           </div>
-          <hr>
+          <hr />
           <div class="summary">
             <p class="summary-text">Total</p>
             <p class="summary-value">$148.98</p>
           </div>
         </div>
       </main>
+      <footer>created by <u>spaprocki</u> - devChallenges.io</footer>
     </div>
   </body>
 </html>
