@@ -16,10 +16,9 @@
       href="https://devchallenges.io/"
     />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
 
     <link href="style.css" rel="stylesheet" />
 
@@ -52,7 +51,7 @@
               </div>
               <div class="input-container">
                 <label for="phone">Phone</label>
-                <span class="material-icons">email</span>
+                <span class="material-icons">phone</span>
                 <input
                   type="text"
                   id="phone"
@@ -67,6 +66,7 @@
             <form>
               <div class="input-container">
                 <label class="label" for="full-name">Full name</label>
+                <span class="material-icons">account_circle</span>
                 <input
                   type="text"
                   id="full-name"
@@ -76,6 +76,7 @@
               </div>
               <div class="input-container">
                 <label for="address">Address</label>
+                <span class="material-icons">home</span>
                 <input
                   type="text"
                   id="address"
@@ -85,34 +86,36 @@
               </div>
               <div class="input-container">
                 <label for="city">City</label>
+                <span class="material-icons">location_city</span>
                 <input type="text" id="city" name="city" value="Your city..." />
               </div>
-              <div class="input-container">
-                <label for="country">Country</label>
-                <input
-                  type="text"
-                  id="country"
-                  name="country"
-                  value="Your country..."
-                />
+              <div id="country-and-postal-code">
+                <div class="input-container">
+                  <label for="country">Country</label>
+                  <span class="material-icons">location_city</span>
+                  <input
+                    type="text"
+                    id="country"
+                    name="country"
+                    value="Your country..."
+                  />
+                </div>
+                <div class="input-container">
+                  <label for="postal-code">Postal code</label>
+                  <span class="material-icons">markunread_mailbox</span>
+                  <input
+                    type="text"
+                    id="postal-code"
+                    name="postal-code"
+                    value="Your postal code..."
+                  />
+                </div>
               </div>
-              <div class="input-container">
-                <label for="postal-code">Postal code</label>
-                <input
-                  type="text"
-                  id="postal-code"
-                  name="postal-code"
-                  value="Your postal code..."
-                />
+              <div id="save-information-container">
+                <input type="checkbox" id="save-information" name="save-information"/>
+              <label for="save-information">Save this information for next time</label>
               </div>
-              <input
-                type="checkbox"
-                id="save-information"
-                name="save-information"
-              />
-              <label for="save-information"
-                >Save this information for next time</label
-              >
+              
               <input type="submit" value="Continue" />
             </form>
           </div>
@@ -121,32 +124,47 @@
           <ul>
             <li>
               <img src="images/photo1.png" alt="An image of a backpack" />
-              <h3>Vintage Backpack</h3>
+              <div class="description">
+                <h3>Vintage Backpack</h3>
               <div class="prices">
                 <p class="new-price">$54.99</p>
                 <p class="old-price">$94.99</p>
               </div>
               <div class="quantity-box">
-                <button class="dec-button">-</button>
+                <button class="inc-dec-button">
+                  <span class="material-icons">remove</span>
+                </button>
                 <p class="quantity">1</p>
-                <button class="inc-button">+</button>
+                <button class="inc-dec-button">
+                  <span class="material-icons">add</span> 
+                </button>
               </div>
+              </div>
+              
             </li>
             <li>
               <img src="images/photo2.png" alt="An image of a pair of shoes" />
-              <h3>Levi Shoes</h3>
+              <div class="description">
+                <h3>Levi Shoes</h3>
               <div class="prices">
                 <p class="new-price">$74.99</p>
                 <p class="old-price">$124.99</p>
               </div>
               <div class="quantity-box">
-                <button class="dec-button">-</button>
+                <button class="inc-dec-button">
+                  <span class="material-icons">remove</span>
+                </button>
                 <p class="quantity">1</p>
-                <button class="inc-button">+</button>
+                <button class="inc-dec-button">
+                  <span class="material-icons">add</span> 
+                </button>
               </div>
+              </div>
+              
             </li>
           </ul>
-          <hr />
+          <div id="summary-container">
+            <hr />
           <div class="summary">
             <p class="summary-text">Shipping</p>
             <p class="summary-value">$19</p>
@@ -156,6 +174,8 @@
             <p class="summary-text">Total</p>
             <p class="summary-value">$148.98</p>
           </div>
+          </div>
+          
         </div>
       </main>
       <footer>created by <u>spaprocki</u> - devChallenges.io</footer>
