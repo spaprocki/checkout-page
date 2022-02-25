@@ -90,15 +90,17 @@
                 <input type="text" id="city" name="city" value="Your city..." />
               </div>
               <div id="country-and-postal-code">
-                <div class="input-container">
+                <div id="select-container" class="input-container">
                   <label for="country">Country</label>
                   <span class="material-icons">location_city</span>
-                  <input
-                    type="text"
-                    id="country"
-                    name="country"
-                    value="Your country..."
-                  />
+                  <span id="arrow-down" class="material-icons">keyboard_arrow_down</span>
+                    
+                  <select id="country" name="country" value="Your country...">
+                    <option value="Poland">Poland</option>
+                    <option value="Great Britain">Great Britain</option>
+                    <option value="Pakistan">Pakistan</option>
+                    <option value="Australia">Australia</option>
+                  </select>
                 </div>
                 <div class="input-container">
                   <label for="postal-code">Postal code</label>

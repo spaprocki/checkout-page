@@ -61,7 +61,7 @@ label {
   position: relative;
 }
 
-input[type=text] {
+input[type=text], select {
   margin-top: 1.4vw;
   display: block;
   height: 10.6vw;
@@ -71,14 +71,15 @@ input[type=text] {
   padding-left: 10.6vw;
   font-size: 3.2vw;
   color: #828282;
+  font-family: Montserrat;
 }
 
 .input-container span {
   position: absolute;
   color: #828282;
-  font-size: 6.4vw;
+  font-size: 4.8vw;
   left: 2.73vw;
-  top: 7.25vw;
+  top: 7.4vw;
 }
 
 #country-and-postal-code {
@@ -91,8 +92,21 @@ input[type=text] {
   top: 10.41vw;
 }
 
+#country-and-postal-code select {
+  width: 43.46vw;
+  appearance: none;
+}
+
 #country-and-postal-code input {
   width: 32.6vw;
+}
+
+#country-and-postal-code #arrow-down {
+  top: 11.11vw;
+  left: 36.8vw;
+  font-size: 4vw;
+  background-color: #E0E0E0;
+  border-radius: 1vw;
 }
 
 input[type=checkbox] {
