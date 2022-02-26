@@ -14,6 +14,7 @@ body {
   font-family: Montserrat;
   font-style: normal;
   font-weight: 600;
+  color: #333333;
 }
 
 #site-wrapper {
@@ -21,7 +22,7 @@ body {
     margin: auto;
 }
 
-header {
+h1{
   margin-top: 8.53vw;
   margin-left: 1.6vw;
   font-size: 6.4vw;
@@ -34,11 +35,6 @@ main {
 }
 
 #information {
-  display: flex;
-  flex-direction: column;
-}
-
-#contact {
   display: flex;
   flex-direction: column;
 }
@@ -61,17 +57,38 @@ label {
   position: relative;
 }
 
-input[type=text], select {
+input,  select {
   margin-top: 1.4vw;
   display: block;
   height: 10.6vw;
   width: 82.7vw;
-  border: #828282 1px solid;
+  border: #828282 0.26vw solid;
   border-radius: 3.2vw;
   padding-left: 10.6vw;
   font-size: 3.2vw;
   color: #828282;
   font-family: Montserrat;
+}
+
+input[type=checkbox] {
+  margin-top: 4.61vw;
+  height: 4vw;
+  width: 4vw;
+  border-radius: 1vw;
+}
+
+input[type=submit] {
+  margin-top: 5.33vw;
+  margin-left: 48.27vw;
+  height: 14.4vw;
+  width: 44.27vw;
+  border-radius: 3.2vw;
+  background-color: #F2994A;
+  color: #FFFFFF;
+  font-size: 4.27vw;
+  border: none;
+  text-align: center;
+  padding-left: 0vw;
 }
 
 .input-container span {
@@ -88,7 +105,7 @@ input[type=text], select {
   column-gap: 6.2vw;
 }
 
-#country-and-postal-code .input-container span {
+#country-and-postal-code span {
   top: 10.41vw;
 }
 
@@ -109,21 +126,12 @@ input[type=text], select {
   border-radius: 1vw;
 }
 
-input[type=checkbox] {
-  margin-top: 4.61vw;
-  display: block;
-  height: 4vw;
-  width: 4vw;
-  border: #828282 1px solid;
-  border-radius: 1vw;
-  color: #828282;
-}
-
 #save-information-container {
   margin-top: 4.4vw;
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   align-items: flex-start;
+  justify-content: flex-end;
 }
 
 #save-information-container input {
@@ -133,18 +141,6 @@ input[type=checkbox] {
 #save-information-container label {
   margin-top: 0vw;
   margin-left: 2vw;
-}
-
-input[type=submit] {
-  margin-top: 5.33vw;
-  margin-left: 48.27vw;
-  height: 14.4vw;
-  width: 44.27vw;
-  border-radius: 3.2vw;
-  background-color: #F2994A;
-  color: #FFFFFF;
-  font-size: 4.27vw;
-  border: none;
 }
 
 #basket {
@@ -174,7 +170,7 @@ img {
   border-radius: 3.47vw;
 }
 
-.description {
+.product-description {
   display: flex;
   flex-direction: column;
 }
@@ -217,24 +213,26 @@ h3 {
   padding: 4.432vw 2.7vw 4.432vw 2.7vw;
 }
 
-.inc-dec-button {
+#quantity {
+  font-size: 4.27vw;
+}
+
+button {
   width: 5.17vw;
   height: 5.17vw;
-
   border-radius: 1.06vw;
   background-color: #E0E0E0;
   color: #828282;
   border: none;
 }
 
-.inc-dec-button span {
+.quantity-box button span {
   font-size: 5.17vw;
 }
 
 #summary-container {
   display: flex;
   flex-direction: column;
-  margin-top: 23.24vw;
   width: 80vw;
   margin: 23.24vw auto 5.33vw auto;
 }

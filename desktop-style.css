@@ -1,0 +1,179 @@
+@media only screen and (min-width: 768px) {
+        
+      #site-wrapper {
+          width: 66.67vw;
+      }
+      
+      h1{
+        margin-top: 4.44vw;
+        margin-left: 0vw;
+        font-size: 2.5vw;
+        height: 3vw;
+      }
+      
+      main {
+        flex-direction: row;
+        column-gap: 7.85vw;
+      }
+      
+      h2 {
+        margin-top: 3.81vw;
+        font-size: 1.25vw;
+      }
+      
+      label {
+        margin-top: 1.04vw;
+        height: 1.04vw;
+        font-size: 0.83vw;
+      }
+      
+      input,  select {
+        margin-top: 0.49vw;
+        height: 3.89vw;
+        width: 28.6vw;
+        border-width: 0.07vw;
+        border-radius: 0.83vw;
+        padding-left: 3.61vw;
+        font-size: 1.11vw;
+      }
+      
+      input[type=checkbox] {
+        margin-top: 1.39vw;
+        height: 1.46vw;
+        width: 1.46vw;
+        border-radius: 0.27vw;
+      }
+      
+      input[type=submit] {
+        margin-top: 1.6vw;
+        margin-left: 20.83vw;
+        height: 3.75vw;
+        width: 11.53vw;
+        border-radius: 0.83vw;
+        font-size: 1.11vw;
+      }
+      
+      .input-container span {
+        font-size: 1.67vw;
+        left: 0.83vw;
+        top: 2.64vw;
+      }
+      
+      #country-and-postal-code {
+        column-gap: 2.15vw;
+      }
+      
+      #country-and-postal-code span {
+        top: 3.54vw;
+      }
+      
+      #country-and-postal-code select {
+        width: 15.07vw;
+      }
+      
+      #country-and-postal-code input {
+        width: 11.4vw;
+      }
+      
+      #country-and-postal-code #arrow-down {
+        top: 3.68vw;
+        left: 12.7vw;
+        font-size: 1.67vw;
+        border-radius: 0.07vw;
+      }
+      
+      #save-information-container {
+        margin-top: 1.39vw;
+        align-items: center;
+      }
+      
+      #save-information-container label {
+        margin-left: 0.76vw;
+      }
+      
+      #basket {
+        margin-top: 3.81vw;
+        border-radius: 0.83vw;
+        width: 100%;
+        height: fit-content;
+      }
+      
+      li {
+        margin-top: 2.33vw;
+        margin-left: 2vw;
+        column-gap: 1.4vw;
+      }
+      
+      img {
+        height: 9.375vw;
+        width: auto;
+        border-radius: 0.9vw;
+      }
+      
+      h3 {
+        font-size: 1.11vw;
+        height: 1.54vw;
+      }
+      
+      .prices {
+        margin-top: 0.42vw;
+      }
+      
+      .new-price {
+        font-size: 1.11vw;
+      }
+      
+      .old-price {
+        margin-left: 2.67vw;
+        font-size: 0.83vw;
+      }
+      
+      .quantity-box {
+        width: 9.32vw;
+        border-width: 0.07vw;
+        border-radius: 0.83vw;
+        padding: 1.09vw 1.05vw;
+      }
+      
+      #quantity {
+        font-size: 1.11vw;
+      }
+      
+      button {
+        width: 1.67vw;
+        height: 1.67vw;
+        border-radius: 0.28vw;
+      }
+      
+      .quantity-box button span {
+        font-size: 1.67vw;
+      }
+      
+      #summary-container {
+        width: 22.7vw;
+        margin: 6.62vw auto 0.97vw auto;
+      }
+      
+      .summary {
+        margin-top: 0.75vw;
+        height: 2.13vw;
+      }
+
+      .summary-text {
+        font-size: 1.25vw;
+    }
+
+    .summary-value {
+        font-size: 0.97vw;
+    }
+      
+      footer {
+        margin-top: 11vw;
+        margin-bottom: 1.67vw;
+        font-size: 0.97vw;
+      }
+      
+      
+      
+
+}
